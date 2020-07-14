@@ -34,17 +34,21 @@ overflow: auto;
 }  
 @media (max-width: 461px){
 
-  .about h1,
-  .education .container h1,
-  .skills .container h1
-  {
-    font-size: 61px!important;
+  .about > h1,
+  .education .container > h1,
+  .skills .container > h1{
+    display: none;
   }
-  .about h2,
+  .about h2{
+    bottom: 54px!important;
+    font-size: 41px!important;
+    margin-bottom: -36px;
+  }
   .education .container h2,
   .skills .container h2{
-    bottom: 66px!important;
+    bottom: -10px!important;
     font-size: 41px!important;
+    margin-bottom: 77px;
   }
   
 }
