@@ -5,13 +5,15 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  /* overflow: hidden; */
+   /* overflow: hidden;  */
+  box-sizing: border-box;
 }
 body {
-  overflow: auto;
+overflow: auto;
     color: #fff;
     background-color: #111111;
 }
+
 @font-face{
     font-family: 'roboto';
     src: url(../webfonts/Roboto-Regular.ttf);
@@ -30,6 +32,22 @@ body {
     border-top: 1px solid #252525;
     width: 40%;
 }  
+@media (max-width: 461px){
+
+  .about h1,
+  .education .container h1,
+  .skills .container h1
+  {
+    font-size: 61px!important;
+  }
+  .about h2,
+  .education .container h2,
+  .skills .container h2{
+    bottom: 66px!important;
+    font-size: 41px!important;
+  }
+  
+}
 /*---Start Home---*/
 .home{
     position: relative;
@@ -84,6 +102,12 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
+}
+.header h2{
+  display: none;
+}
+.header h2 span{
+  color: #ffb400;
 }
 @media (max-width: 991px){
     .home{
@@ -235,6 +259,25 @@ body {
         left: 50px;
         font-weight: 400;
       }
+      .sticky{
+        padding: 16px 25px 14px;
+        background: #252525;
+        border-bottom: 1px solid #333;
+        margin-bottom: 36px;
+        position: fixed;
+        right: 0;
+        left: 0;
+        z-index: 11;
+        top: 0;
+      }
+      .title{
+        display: block!important;
+        font-size: 26px;
+        font-weight: 900;
+        color: #fff;
+        text-transform: uppercase;
+        margin: 0;
+      }
 }
 @media (min-width: 992px){
     .header {
@@ -340,30 +383,33 @@ body {
         border-radius: 30px 0 0 30px;
         background-color: #ffb400;
       }
+      .header h2{
+        display: none;
+      }
   
 }
 /*---End Home---*/
-/*---Start Abaout---*/
-.abaout{
+/*---Start about---*/
+.about{
     background-color: #111111;
     position: relative;
     padding: 63px 0;
     height: auto;
 }
-.abaout .overlay{
+.about .overlay{
     width: 100%;
     height: 100%;
     position: absolute;
     bottom: 0%;
     background-color: #111111db;
 }
-.abaout h1{
+.about h1{
     text-transform: uppercase;
     font-weight: 800;
     font-size: 93px;
     letter-spacing: 7px;
 }
-.abaout h2{
+.about h2{
     position: relative;
     z-index: 2;
     bottom: 85px;
@@ -371,28 +417,28 @@ body {
     font-size: 45px;
     font-weight: 900;
 }
-.abaout .container .personal-infos{
+.about .container .personal-infos{
     
 }
-.abaout .containerr .personal-infos h3{
+.about .containerr .personal-infos h3{
     text-transform: uppercase;
     margin-bottom: 25px
 }
-.abaout .containerr .personal-infos ul{
+.about .containerr .personal-infos ul{
     line-height: 45px;
     font-size: 18px;
     font-family: roboto;
 }
-.abaout .personal-infos li{
+.about .personal-infos li{
   color: #9d9d9d;
 }
-.abaout .personal-infos li span{
+.about .personal-infos li span{
   color: white;
 }
-.abaout .containerr .brief_intro h3{
+.about .containerr .brief_intro h3{
     text-transform: uppercase;
 }
-.abaout .containerr p{
+.about .containerr p{
     font-family: roboto;
     line-height: 31px;
     max-width: 495px;
@@ -401,7 +447,7 @@ body {
     word-spacing: 2px;
     margin-top: 28px;
 }
-.abaout button{
+.about button{
     background-color: #ffb400;
     border: none;
     padding: 11px 34px;
@@ -416,15 +462,15 @@ body {
 }
 
 @media (max-width: 540px){
-    .abaout .personal-infos,.abaout .brief_intro{
+    .about .personal-infos,.about .brief_intro{
       padding: 29px;
     }
-    .abaout .brief_intro p{
+    .about .brief_intro p{
       font-size: 16px;
       line-height: 32px;
     }
 }
-/*---End Abaout---*/
+/*---End about---*/
 
 /*---Start Education---*/
 .education{
