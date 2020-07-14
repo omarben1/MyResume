@@ -59,3 +59,17 @@ window.addEventListener("scroll",scrollAppear);
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   }
+
+window.addEventListener("scroll", function(){
+    let header = document.querySelector(".header");
+    header.classList.toggle("sticky",window.scrollY>0);
+    document.querySelector(".header h2").classList.toggle("title",window.scrollY>0);
+    if(window.scrollY>0 == true){
+        document.querySelector(".header #menuToggle").style.top = "5px";
+        document.querySelector(".header #menuToggle").style.right = "9px";
+    }
+    else{
+        document.querySelector(".header #menuToggle").style.top = "30px";
+        document.querySelector(".header #menuToggle").style.right = "30px";
+    }
+})
