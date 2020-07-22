@@ -405,7 +405,8 @@ overflow: auto;
     height: 100%;
     position: absolute;
     bottom: 0%;
-    background-color: #111111db;
+    background-color: #111;
+    opacity: .9;
 }
 .about h1{
     text-transform: uppercase;
@@ -501,7 +502,8 @@ overflow: auto;
     position: absolute;
     bottom: 0%;
     left: 0;
-    background-color: #111111db;
+    background-color: #111;
+    opacity: .9;
 }
 .education .container ul {
     
@@ -576,7 +578,8 @@ overflow: auto;
     position: absolute;
     bottom: 0%;
     left: 0;
-    background-color: #111111db;
+    background-color: #111;
+    opacity: .9;
 }
 .skills .container .ticket{
         margin: 0 auto 41px auto;
